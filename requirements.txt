@@ -1,6 +1,7 @@
 arrow==0.12.1
 certifi==2018.4.16
 chardet==3.0.4
+Django==2.1
 idna==2.7
 python-dateutil==2.7.3
 pytz==2018.5
@@ -9,3 +10,4 @@ six==1.11.0
 stravalib==0.9.4
 units==0.7
 urllib3==1.23
+
