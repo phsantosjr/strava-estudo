@@ -1,9 +1,15 @@
 import json
 import requests
+import configparser
+from data_from_http import token_entry
+from data_from_lib import cfg
 
-clientid = 27269
-clientsecret = 'secret'
-token_entry = 'tokey_entry'
+fg = configparser.ConfigParser()
+cfg._interpolation = configparser.ExtendedInterpolation()
+
+cfg.read("token_id.ini")
+clientid = cfg.get('strava','clientid')
+print(clientid)
 activity = "1726741296" #(https://www.strava.com/activities/1726741296)
 
 activity = 1726741296  # (https://www.strava.com/activities/1726741296)
